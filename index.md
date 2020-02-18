@@ -1,12 +1,4 @@
----
-layout: page
-title: "入门: 概述"
-permalink: /get-started/
-summary: Flutter入门
-keywords: Flutter入门
----
-
-欢迎来到Flutter入门体验:
+#欢迎来到Flutter入门体验:
 
 - [安装Flutter框架](#安装Flutter框架)
 * 安装Flutter框架的依赖关系
