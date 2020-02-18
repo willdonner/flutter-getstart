@@ -17,4 +17,4 @@ keywords: Flutter入门
 
 ## 下一步
 
-[下一步: 安装 Flutter](/install/)
+[下一步: 安装 Flutter](install)
