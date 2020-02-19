@@ -15,9 +15,10 @@
 *   [编辑器设置](#编辑器设置)
 *   [Android设置](#android设置)
     *   [安装Android Studio](#安装android-studio)
+    *   [安装Visual-Studio-Code](#安装Visual-Studio-Code)
     *   [设置您的Android设备](#设置您的android设备)
     *   [设置Android模拟器](#设置android模拟器)
-*   [下一步](#下一步)
+
 
 ## 使用镜像
 
@@ -65,7 +66,7 @@
 
 上述命令为当前终端窗口临时设置PATH变量。要将Flutter永久添加到路径中，请参阅[更新路径](#更新环境变量)。
 
-要更新现有版本的Flutter，请参阅[升级Flutter](/upgrading/)。
+要更新现有版本的Flutter，请参阅[升级Flutter](#升级Flutter)。
 
 ### 更新环境变量
 
@@ -100,7 +101,7 @@
 
 第一次运行一个flutter命令（如flutter doctor）时，它会下载它自己的依赖项并自行编译。以后再运行就会快得多。
 
-以下各部分介绍如何执行这些任务并完成设置过程。你会看到在`flutter doctor`输出中， 如果你选择使用IDE，我们提供了，IntelliJ IDEA，Android Studio和VS Code的插件， 请参阅[编辑器设置](/get-started/editor/) 以了解安装Flutter和Dart插件的步骤。
+以下各部分介绍如何执行这些任务并完成设置过程。你会看到在`flutter doctor`输出中， 如果你选择使用IDE，我们提供了，IntelliJ IDEA，Android Studio和VS Code的插件， 请参阅[编辑器设置](#编辑器设置) 以了解安装Flutter和Dart插件的步骤。
 
 一旦你安装了任何缺失的依赖，再次运行`flutter doctor`命令来验证你是否已经正确地设置了。
 
@@ -109,8 +110,6 @@
 ## 编辑器设置
 
 使用 `flutter` 命令行工具，您可以使用任何编辑器来开发Flutter应用程序。输入`flutter help`在提示符下查看可用的工具。
-
-我们建议使用我们的插件来获得[丰富的IDE体验](/using-ide/)，支持编辑，运行和调试Flutter应用程序。请参阅[编辑器设置](/get-started/editor/)了解详细步骤
 
 ## Android设置
 
@@ -123,6 +122,37 @@ Flutter需要安装和配置Android Studio:
 1.  下载并安装 [Android Studio](https://developer.android.com/studio/index.html).
 
 2.  启动Android Studio，然后执行“Android Studio安装向导”。这将安装最新的Android SDK，Android SDK平台工具和Android SDK构建工具，这是Flutter为Android开发时所必需的
+
+需要安装两个插件:
+1.  Flutter插件： 支持Flutter开发工作流 (运行、调试、热重载等)
+2.  Dart插件： 提供代码分析 (输入代码时进行验证、代码补全等)
+
+要安装这些:
+1.  启动Android Studio
+2.  打开插件首选项 (Preferences>Plugins on macOS, File>Settings>Plugins on Windows & Linux)
+3.  选择 Browse repositories…, 选择 Flutter 插件并点击 install
+4.  重启Android Studio后插件生效
+
+### 安装Visual-Studio-Code
+VS Code: 轻量级编辑器，支持Flutter运行和调试.
+
+### 安装 VS Code
+
+*   [VS Code](https://code.visualstudio.com/), 安装1.20.1或更高版本.
+
+### 安装Flutter插件
+
+1.  启动 VS Code
+2.  调用 **View>Command Palette…**
+3.  输入 ‘install’, 然后选择 **Extensions: Install Extension** action
+4.  在搜索框输入 `flutter` , 在搜索结果列表中选择 ‘Flutter’, 然后点击 **Install**
+5.  选择 ‘OK’ 重新启动 VS Code
+
+## 通过Flutter Doctor验证您的设置
+
+1.  调用 **View>Command Palette…**
+2.  输入 ‘doctor’, 然后选择 **‘Flutter: Run Flutter Doctor’** action
+3.  查看“OUTPUT”窗口中的输出是否有问题
 
 ### 设置您的Android设备
 
